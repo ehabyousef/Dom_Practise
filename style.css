@@ -1,0 +1,84 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: rgb(99, 98, 97);
+}
+.container {
+  margin-top: 15px;
+  padding: 15px;
+}
+.images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.images .image {
+  position: relative;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+.images .image:hover {
+  box-shadow: 6px 3px 15px 0px #000000eb;
+}
+.images img {
+  height: 400px;
+  width: 400px;
+  border-radius: 10px;
+}
+@media (min-width: 1900px) {
+  .images img {
+    height: 500px;
+    width: 500px;
+  }
+}
+.caption {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #ada7a7a1;
+  padding: 15px;
+}
+.appear {
+  position: fixed;
+  inset: 0;
+  z-index: 1;
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+#item {
+  height: 50%;
+  width: 50%;
+  /* background-image: url(./images/Naruto.jpeg); */
+  background-size: 100% 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+.ar-left {
+  transform: rotate(180deg);
+}
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+#close {
+  font-size: 50px;
+  color: red;
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  font-style: italic;
+  cursor: pointer;
+}
