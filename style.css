@@ -46,6 +46,10 @@ body {
   background-color: #ada7a7a1;
   padding: 15px;
 }
+.caption p {
+  color: #000fc5;
+  font-size: 30px;
+}
 .appear {
   position: fixed;
   inset: 0;
