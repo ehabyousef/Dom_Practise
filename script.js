@@ -34,8 +34,8 @@ function getprevslide() {
   var currentSrc = images[currentIndex].src;
   item.style.backgroundImage = `url(${currentSrc})`;
   console.log(currentIndex);
-  if (currentIndex === 0) {
-    currentIndex === 4;
+  if (currentIndex == 0) {
+    currentIndex = 6;
     // prev.setAttribute("disabled", "");
   }
 }
