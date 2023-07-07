@@ -24,7 +24,8 @@ function getnextslide() {
   item.style.backgroundImage = `url(${currentSrc})`;
   console.log(currentIndex);
   if (currentIndex == 5) {
-    next.setAttribute("disabled", "");
+    currentIndex = -1;
+    // next.setAttribute("disabled", "");
   }
 }
 prev.addEventListener("click", getprevslide);
@@ -33,8 +34,9 @@ function getprevslide() {
   var currentSrc = images[currentIndex].src;
   item.style.backgroundImage = `url(${currentSrc})`;
   console.log(currentIndex);
-  if (currentIndex == 0) {
-    prev.setAttribute("disabled", "");
+  if (currentIndex === 0) {
+    currentIndex === 4;
+    // prev.setAttribute("disabled", "");
   }
 }
 
